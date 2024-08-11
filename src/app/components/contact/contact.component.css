@@ -1,0 +1,161 @@
+/* Fondo general de la sección */
+#contact {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #1e1e1e 0%, #343434 100%);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+}
+
+/* Elementos de fondo para el efecto 3D */
+#contact::before, #contact::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 25%, transparent 25%),
+  radial-gradient(circle, rgba(255, 255, 255, 0.1) 25%, transparent 25%);
+  background-size: 50px 50px;
+  animation: rotate 15s linear infinite;
+  z-index: 1;
+  opacity: 0.15;
+}
+
+#contact::after {
+  background-size: 100px 100px;
+  animation-duration: 30s;
+}
+
+/* Animación para el efecto de rotación */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Fondo y contorno de los elementos */
+#contact .social,
+#contact .d-flex,
+#contact button {
+  position: relative;
+  z-index: 2;
+}
+
+#contact h2 {
+  font-size: 2.8em;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#contact .social {
+  margin-bottom: 40px;
+}
+
+#contact .social ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#contact .social li {
+  margin: 0 20px;
+}
+
+#contact .social a {
+  color: #fff;
+  transition: color 0.3s, transform 0.3s;
+}
+
+#contact .social a:hover {
+  color: #007BB6;; /* Color de hover para LinkedIn */
+  transform: scale(1.1);
+}
+
+#contact .github a:hover {
+  color: #444444; /* Color de hover para GitHub */
+}
+
+#contact .navbar-nav .nav-item {
+  display: inline-block;
+}
+
+#contact .navbar-nav .nav-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#contact .navbar-nav .nav-item a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px);
+}
+
+#contact .d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#contact .d-flex svg {
+  margin-right: 15px;
+  color: #fff;
+}
+
+#contact .d-flex p {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+#contact button {
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #1e90ff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s, transform 0.3s;
+  z-index: 2;
+}
+
+#contact button:hover {
+  background-color: #1c7ed6;
+  transform: translateY(-5px);
+}
+
+#contact button i {
+  margin-left: 12px;
+}
+
+#contact button .overlay {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: left 0.3s;
+}
+
+#contact button:hover .overlay {
+  left: 0;
+}

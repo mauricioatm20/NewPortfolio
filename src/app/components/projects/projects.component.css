@@ -1,0 +1,122 @@
+section{
+  font-family: Arial, sans-serif;
+
+  background-image: url("/assets/images/fondo1.jpg");
+  animation: gradientBackground 90s ease infinite;
+  color: #FFFFFF;
+  padding-top: 2.5%;
+  overflow: hidden; /* O usa overflow-x: auto; si necesitas permitir el desplazamiento horizontal en casos específicos */
+}
+/* Restablecer bordes en todos los elementos */
+
+h2.section-title {
+  text-align: center;
+  color: white;
+  font-family: "Al Bayan";
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-shadow: 3px 3px 5px black;
+  margin-top: 50px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.col-md-4 {
+  flex: 1 1 calc(33.333% - 20px);
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: black;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.img2{
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+.img{
+
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-title {
+  margin: 0.5em 0;
+  font-size: 1.5em;
+  color: whitesmoke;
+}
+
+.card-text {
+  color: darkgray;
+  margin-bottom: 1em;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-outline-dark {
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #333;
+}
+
+.btn-outline-dark:hover {
+  background-color: #333;
+  color: white;
+}
+@keyframes gradientBackground {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}

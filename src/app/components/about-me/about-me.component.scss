@@ -1,0 +1,87 @@
+.about-me {
+  position: relative;
+  background: linear-gradient(135deg, #000000, #303030, #383838,#AAAA );
+  background-size: 400% 400%;
+  animation: gradientBackground 15s ease infinite;
+  color: #FFFFFF;
+  padding-top: 7%;
+  overflow: hidden;
+  width: 100%;
+}
+  .container2 {
+    margin-top: 20px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+
+    .faceImg {
+      margin-top: 50px;
+      border-radius: 50%;
+      position: relative;
+      top: -5px;
+      mask-image: linear-gradient(
+           #003333 60%, transparent
+      );
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      text-shadow: 3px 3px 5px #007BB6;
+
+    }
+    h4{
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      text-shadow: 3px 3px 5px #000000;
+    }
+
+    .name {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .qualification {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 10px; // Espacio entre el nombre y la calificación
+    }
+
+  }
+
+  .title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-shadow: 3px 3px 5px #007777;
+  }
+
+.description {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #FFFFFF;
+}
+@keyframes gradientBackground {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+
+
+
+
+
+
