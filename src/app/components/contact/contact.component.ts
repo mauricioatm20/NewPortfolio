@@ -16,7 +16,7 @@ export class ContactComponent {
   downloadCV() {
     // Crea un elemento de enlace temporal
     const link = document.createElement('a');
-    link.href = '/assets/pdf/CV-MauricioChasi.pdf'; // URL del archivo a descargar
+    link.href = '/assets/pdf/CvEdwinMauricio.pdf'; // URL del archivo a descargar
     link.download = 'CV.MauricioChasi.pdf'; // Nombre del archivo al descargar
     link.style.display = 'none'; // Ocultar el enlace
     document.body.appendChild(link); // Añadir el enlace al DOM
